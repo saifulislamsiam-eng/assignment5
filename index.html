@@ -197,4 +197,44 @@
     </aside>
   </main>
 
+  <!-- JavaScript -->
+  <script>
+    let heartCount = 0;
+    let coinCount = 100;
+    let copyCount = 0;
+
+    function addHeart(btn) {
+      heartCount++;
+      document.getElementById("heartCount").innerText = heartCount;
+      btn.innerText = "❤";
+    }
+
+    function copyNumber(num) {
+      navigator.clipboard.writeText(num);
+      copyCount++;
+      document.getElementById("copyCount").innerText = copyCount;
+      alert("Number copied: " + num);
+    }
+
+    function makeCall(service, num) {
+      if (coinCount < 20) {
+        alert("Not enough coins! Each call needs 20 coins.");
+        return;
+      }
+      coinCount -= 20;
+      document.getElementById("coinCount").innerText = coinCount;
+      alert(`Calling ${service} at ${num}`);
+      
+      let time = new Date().toLocaleTimeString();
+      let li = document.createElement("li");
+      li.innerText = `${service} (${num}) - ${time}`;
+      document.getElementById("callHistory").prepend(li);
+    }
+
+    function clearHistory() {
+      document.getElementById("callHistory").innerHTML = "";
+    }
+  </script>
+
 </body>
+</html>
