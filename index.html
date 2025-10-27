@@ -35,4 +35,156 @@
   </section>
 
 
+  <!-- Main Section -->
+  <main class="grid grid-cols-1 lg:grid-cols-4 gap-6 p-6">
+
+    <!-- Cards Section -->
+    <section class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4" id="cards">
+
+      <!-- Card Template Example -->
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+          <img src="assets/emergency.png" class="w-10 h-10 bg-red-100 p-2 rounded-lg" alt="">
+          <button onclick="addHeart(this)" class="text-gray-400 hover:text-red-500">♡</button>
+        </div>
+        <h2 class="mt-2 font-bold">National Emergency Number</h2>
+        <p class="text-gray-500 text-sm">National Emergency</p>
+        <p class="text-2xl font-bold">999</p>
+        <span class="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">All</span>
+        <div class="flex gap-2 mt-4">
+          <button onclick="copyNumber('999')" class="flex-1 border rounded py-2 text-sm">📋 Copy</button>
+          <button onclick="makeCall('National Emergency Number','999')" class="flex-1 bg-green-500 text-white rounded py-2 text-sm">📞 Call</button>
+        </div>
+      </div>
+
+      <!-- Police -->
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+          <img src="assets/police.png" class="w-10 h-10 bg-blue-100 p-2 rounded-lg" alt="">
+          <button onclick="addHeart(this)" class="text-gray-400 hover:text-red-500">♡</button>
+        </div>
+        <h2 class="mt-2 font-bold">Police Helpline Number</h2>
+        <p class="text-gray-500 text-sm">Police</p>
+        <p class="text-2xl font-bold">999</p>
+        <span class="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Police</span>
+        <div class="flex gap-2 mt-4">
+          <button onclick="copyNumber('999')" class="flex-1 border rounded py-2 text-sm">📋 Copy</button>
+          <button onclick="makeCall('Police Helpline','999')" class="flex-1 bg-green-500 text-white rounded py-2 text-sm">📞 Call</button>
+        </div>
+      </div>
+
+      <!-- Fire -->
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+          <img src="assets/fire-service.png" class="w-10 h-10 bg-red-100 p-2 rounded-lg" alt="">
+          <button onclick="addHeart(this)" class="text-gray-400 hover:text-red-500">♡</button>
+        </div>
+        <h2 class="mt-2 font-bold">Fire Service Number</h2>
+        <p class="text-gray-500 text-sm">Fire Service</p>
+        <p class="text-2xl font-bold">999</p>
+        <span class="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Fire</span>
+        <div class="flex gap-2 mt-4">
+          <button onclick="copyNumber('999')" class="flex-1 border rounded py-2 text-sm">📋 Copy</button>
+          <button onclick="makeCall('Fire Service','999')" class="flex-1 bg-green-500 text-white rounded py-2 text-sm">📞 Call</button>
+        </div>
+      </div>
+
+      <!-- Ambulance -->
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+          <img src="assets/ambulance.png" class="w-10 h-10 bg-pink-100 p-2 rounded-lg" alt="">
+          <button onclick="addHeart(this)" class="text-gray-400 hover:text-red-500">♡</button>
+        </div>
+        <h2 class="mt-2 font-bold">Ambulance Service</h2>
+        <p class="text-gray-500 text-sm">Health</p>
+        <p class="text-2xl font-bold">1994-999999</p>
+        <span class="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Health</span>
+        <div class="flex gap-2 mt-4">
+          <button onclick="copyNumber('1994-999999')" class="flex-1 border rounded py-2 text-sm">📋 Copy</button>
+          <button onclick="makeCall('Ambulance Service','1994-999999')" class="flex-1 bg-green-500 text-white rounded py-2 text-sm">📞 Call</button>
+        </div>
+      </div>
+
+      <!-- Women & Child -->
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+          <img src="assets/emergency.png" class="w-10 h-10 bg-yellow-100 p-2 rounded-lg" alt="">
+          <button onclick="addHeart(this)" class="text-gray-400 hover:text-red-500">♡</button>
+        </div>
+        <h2 class="mt-2 font-bold">Women & Child Helpline</h2>
+        <p class="text-gray-500 text-sm">Helpline</p>
+        <p class="text-2xl font-bold">109</p>
+        <span class="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Help</span>
+        <div class="flex gap-2 mt-4">
+          <button onclick="copyNumber('109')" class="flex-1 border rounded py-2 text-sm">📋 Copy</button>
+          <button onclick="makeCall('Women & Child Helpline','109')" class="flex-1 bg-green-500 text-white rounded py-2 text-sm">📞 Call</button>
+        </div>
+      </div>
+
+      <!-- Anti Corruption -->
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+          <img src="assets/emergency.png" class="w-10 h-10 bg-orange-100 p-2 rounded-lg" alt="">
+          <button onclick="addHeart(this)" class="text-gray-400 hover:text-red-500">♡</button>
+        </div>
+        <h2 class="mt-2 font-bold">Anti-Corruption Helpline</h2>
+        <p class="text-gray-500 text-sm">Govt.</p>
+        <p class="text-2xl font-bold">106</p>
+        <span class="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Govt</span>
+        <div class="flex gap-2 mt-4">
+          <button onclick="copyNumber('106')" class="flex-1 border rounded py-2 text-sm">📋 Copy</button>
+          <button onclick="makeCall('Anti-Corruption Helpline','106')" class="flex-1 bg-green-500 text-white rounded py-2 text-sm">📞 Call</button>
+        </div>
+      </div>
+
+      <!-- Electricity -->
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+          <img src="assets/emergency.png" class="w-10 h-10 bg-purple-100 p-2 rounded-lg" alt="">
+          <button onclick="addHeart(this)" class="text-gray-400 hover:text-red-500">♡</button>
+        </div>
+        <h2 class="mt-2 font-bold">Electricity Helpline</h2>
+        <p class="text-gray-500 text-sm">Electricity Outage</p>
+        <p class="text-2xl font-bold">16216</p>
+        <span class="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Electricity</span>
+        <div class="flex gap-2 mt-4">
+          <button onclick="copyNumber('16216')" class="flex-1 border rounded py-2 text-sm">📋 Copy</button>
+          <button onclick="makeCall('Electricity Helpline','16216')" class="flex-1 bg-green-500 text-white rounded py-2 text-sm">📞 Call</button>
+        </div>
+      </div>
+
+      <!-- BRAC -->
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+          <img src="assets/brac.png" class="w-10 h-10 bg-pink-200 p-2 rounded-lg" alt="">
+          <button onclick="addHeart(this)" class="text-gray-400 hover:text-red-500">♡</button>
+        </div>
+        <h2 class="mt-2 font-bold">Brac Helpline</h2>
+        <p class="text-gray-500 text-sm">NGO</p>
+        <p class="text-2xl font-bold">16445</p>
+        <span class="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">NGO</span>
+        <div class="flex gap-2 mt-4">
+          <button onclick="copyNumber('16445')" class="flex-1 border rounded py-2 text-sm">📋 Copy</button>
+          <button onclick="makeCall('Brac Helpline','16445')" class="flex-1 bg-green-500 text-white rounded py-2 text-sm">📞 Call</button>
+        </div>
+      </div>
+
+      <!-- Railway -->
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+          <img src="assets/Bangladesh-Railway.png" class="w-10 h-10 bg-green-100 p-2 rounded-lg" alt="">
+          <button onclick="addHeart(this)" class="text-gray-400 hover:text-red-500">♡</button>
+        </div>
+        <h2 class="mt-2 font-bold">Bangladesh Railway Helpline</h2>
+        <p class="text-gray-500 text-sm">Railway</p>
+        <p class="text-2xl font-bold">163</p>
+        <span class="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Travel</span>
+        <div class="flex gap-2 mt-4">
+          <button onclick="copyNumber('163')" class="flex-1 border rounded py-2 text-sm">📋 Copy</button>
+          <button onclick="makeCall('Bangladesh Railway Helpline','163')" class="flex-1 bg-green-500 text-white rounded py-2 text-sm">📞 Call</button>
+        </div>
+      </div>
+
+    </section>
+
 </body>
